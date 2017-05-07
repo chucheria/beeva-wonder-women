@@ -1,206 +1,173 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<style>
 
-@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i);
+<link href="stack.v0.css" rel="stylesheet">
 
-section {
-  background: #000;
-  color: #fff;
-  padding: 2em;
-  font-family: "PT Serif", Baskerville, Georgia;
-}
-
-#follow {
-  background: none;
-}
-
-.grey {
-  color: #777;
-}
-
-a:link,
-a:visited {
-  color: orange;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-</style>
-
-<section style="text-align:center;padding-top:5em;">
-  <p style="font-size:120%;"><b><a href="https://github.com/mbostock/stack">Stack</a></b> is a presentation library<br> with simple, scroll-based navigation.
-  <p class="grey">Scroll down to continue.
+<section class="title">
+    <p><b>Everybody loves data visualization</b>
+    <p class="subparagraph">BEEVA Wonder Women
 </section>
 
-<section style="padding:5em 9em;">
-  <p>In addition to the mouse,
-    <br>you can scroll with the keyboard:
-    <br>use the <b>arrow keys</b>,
-    <br>the <b>space bar</b>,
-    <br>or <b>page up</b> and <b>page down</b>.
-  <p class="grey">Multiple key presses will skip multiple slides.
+<section>
+    <div class="slide-title">
+        <p>What? Who? Where?</p>
+    </div>
+    <div class='slide-body'>
+        <ul>
+            <li>News graphics</li>
+            <li>Tools</li>
+            <li>Interactive installations</li>
+            <li>···</li>
+        </ul>
+    </div>
 </section>
 
-<section style="text-align:center;padding-top:5em;">
-  <p>You can even grab the scroll bar!
+<section>
+    <video preload='none' src="movies/news.mov" loop></video>
+    <a href="https://www.nytimes.com/interactive/2015/01/09/sports/the-dawn-wall-el-capitan.html?_r=0">The Dawn Wall</a>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  9
+<section>
+    <video preload='none' src="movies/tools.mov" loop></video>
+    <a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">1px moon</a>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  8
+<section>
+    <img src="img/installation.jpg" alt="The Data Monolith">
+    <a href="http://truth-and-beauty.net/projects/epfl-data-monolith">The Data Monolith</a>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  7
+<section>
+    <div class="slide-title">
+        <p>Main problems</p>
+    </div>
+    <div class='slide-body'>
+        <ul>
+            <li><a href="https://vimeo.com/182590214">Multidevice</a></li>
+            <li><a href="https://vimeo.com/182590214">Low interaction</a></li>
+            <li>Need of experts</li>
+        </ul>
+        <div class="subparagraph">
+            <p>Should we just stop trying?
+        </div>
+    </div>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  6
+<section>
+    <div class="slide-title">
+        <p>Why?</p>
+    </div>
+    <div class='slide-body'>
+        <p class="super-important">complex world</p>
+        <p class="super-important">=</p>
+        <p class="super-important">complex data</p>
+    </div>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  5
+<section>
+    <div class="slide-title">
+        <p>How?</p>
+    </div>
+    <div class='slide-body'>
+        <p class="super-important">know</p>
+        <p class="super-important">your</p>
+        <p class="super-important">audience</p>
+    </div>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  4
+<section>
+    <video preload='none' src="movies/tools.mov" loop></video>
+    <a href="https://www.datmean.com/">Datmean</a>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  3
+<section>
+    <div class="slide-title">
+        <p>DMeans APP</p>
+    </div>
+    <div class='slide-body'>
+        <p>author: Datmean</p>
+        <a href="https://www.python.org/">python (algorithm),</a>
+        <a href="https://www.mysql.com/">sql,</a>
+        <a href="http://amcharts.com/">amcharts,</a>
+        <a href="https://d3js.org/">d3js</a>
+    </div>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  2
+<section>
+    <video preload='none' src="movies/tools.mov" loop></video>
+    <a href="https://www.datmean.com/">SNL Prediction</a>
 </section>
 
-<section style="text-align:center;padding:.35em;font-size:1000%;">
-  1
+<section>
+    <div class="slide-title">
+        <p>SNL Prediction</p>
+    </div>
+    <div class='slide-body'>
+        <p>author: Carlos & Bea</p>
+        <a href="https://www.tensorflow.org/">python (tensorflow), </a>
+        <a href="https://d3js.org/">d3js</a>
+    </div>
 </section>
 
-<section id="follow" style="padding-top:5em;background:url(sky.jpg);background-size:cover;">
-  <p style="text-align:center;color:#000;font-size:200%;line-height:1.35em;">INSPIRATIONAL IMAGE<br>ACCOMPANIED BY<br>INSIGHTFUL COMMENTARY
-  <p id="follow-anchor" style="position:fixed;text-indent:-1.25em;">&larr; When this bar reaches the top,<br>the next slide will fade in.
-</section>
 
-<section style="text-align:center;padding-top:5em;">
-  <p>If you resize the window,
-    <br>slide content will scale up or down
-    <br>to fit automatically.
-</section>
-
-<section id="lorenz" style="text-align:center;padding-top:0;">
-  <canvas></canvas>
-  <p style="position:absolute;z-index:1;padding-top:5em;left:0;width:100%;text-shadow:0 1px 0 #000;">Use <i>activate</i> and <i>deactivate</i> events
-    <br>to enable complex animations
-    <br>only when visible.
-</section>
-
-<section style="padding:5em 13em;">
-  <p>Stack is made by <a href="http://bost.ocks.org/mike/" rel="author">Mike Bostock</a>
-    <br>and is available on <a href="https://github.com/mbostock/stack">GitHub</a>
-    <br>under the <a href="https://github.com/mbostock/stack/blob/gh-pages/LICENSE">BSD license</a>.
-  <p><a style="color:#777;text-decoration:none;" href="https://github.com/mbostock/stack">View source to get started.</a>
+<section>
+    <div class="slide-title">
+        <p><a href="https://chucheria.github.io/material/" rel="author">Bea Hernández</a>
+    </div>
+    <div class='slide-body'>
+        <br>see my work in <a href="https://github.com/chucheria">GitHub</a>
+        <br>talk with me in <a href="https://twitter.com/chucheria">Twitter</a>
+        <p><br>@chucheria</p>
+    </div>
 </section>
 
 <script src="d3.v3.min.js"></script>
-<script src="stack.v1.min.js"></script>
+<script src="stack.v1.js"></script>
 <script>
+    var mystack = stack()
+        .on("activate", activate)
+        .on("deactivate", deactivate);
 
-var mystack = stack()
-    .on("activate", activate)
-    .on("deactivate", deactivate);
+    var section = d3.selectAll("section"),
+        follow = d3.select("#follow"),
+        followAnchor = d3.select("#follow-anchor"),
+        lorenz = d3.select("#lorenz"),
+        followIndex = section[0].indexOf(follow.node()),
+        lorenzIndex = section[0].indexOf(lorenz.node());
 
-var section = d3.selectAll("section"),
-    follow = d3.select("#follow"),
-    followAnchor = d3.select("#follow-anchor"),
-    lorenz = d3.select("#lorenz"),
-    followIndex = section[0].indexOf(follow.node()),
-    lorenzIndex = section[0].indexOf(lorenz.node());
-
-function refollow() {
-  followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
-}
-
-function activate(d, i) {
-  if (i === followIndex) mystack.on("scroll.follow", refollow);
-  if (i === lorenzIndex) startLorenz();
-}
-
-function deactivate(d, i) {
-  if (i === followIndex) mystack.on("scroll.follow", null);
-  if (i === lorenzIndex) stopLorenz();
-}
-
-var lorenzInterval;
-
-function startLorenz() {
-  var δτ = 0.003,
-      ρ = 28,
-      σ = 10,
-      β = 8 / 3,
-      x = .5,
-      y = .5,
-      z = 10,
-      n = 30;
-
-  var width = 1280,
-      height = 720;
-
-  var canvas = d3.select("canvas")
-      .style("position", "absolute")
-      .style("top", 0)
-      .style("left", 0)
-      .style("width", "100%")
-      .style("height", "100%")
-      .attr("width", width)
-      .attr("height", height);
-
-  var color = d3.scale.linear()
-      .domain([0, 20, 30, 50])
-      .range(["yellow", "orange", "brown", "purple"])
-      .interpolate(d3.interpolateHcl);
-
-  var context = canvas.node().getContext("2d");
-
-  context.lineWidth = .2;
-  context.fillStyle = "rgba(0,0,0,.03)";
-
-  d3.timer(function() {
-    context.save();
-    context.globalCompositeOperation = "lighter";
-    context.translate(width / 2, height / 2);
-    context.scale(12, 14);
-    context.rotate(30);
-    for (var i = 0; i < n; ++i) {
-      context.strokeStyle = color(z);
-      context.beginPath();
-      context.moveTo(x, y);
-      x += δτ * σ * (y - x);
-      y += δτ * (x * (ρ - z) - y);
-      z += δτ * (x * y - β * z);
-      context.lineTo(x, y);
-      context.stroke();
+    function refollow() {
+        followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
     }
-    context.restore();
-    return !lorenzInterval;
-  });
 
-  lorenzInterval = setInterval(function() {
-    context.fillRect(0, 0, width, height);
-  }, 100);
-}
+    function activate(d, i) {
+        if (i === followIndex) mystack.on("scroll.follow", refollow);
+        if (i === lorenzIndex) startLorenz();
+    }
 
-function stopLorenz() {
-  lorenzInterval = clearInterval(lorenzInterval);
-}
+    function deactivate(d, i) {
+        if (i === followIndex) mystack.on("scroll.follow", null);
+        if (i === lorenzIndex) stopLorenz();
+    }
+    function startVideo(i) {
+      var video = section.filter(function(d,j) { return i == j; }).select("video");
+      video.each(function(d,j) {
+          this.play();
+      });
+    }
 
+    function stopVideo(i) {
+      var video = section.filter(function(d,j) { return i == j; }).select("video");
+      video.each(function(d,j) {
+          this.pause();
+      });
+    }
+
+    function activate(d, i) {
+      startVideo(i);
+    }
+
+    function deactivate(d, i) {
+      stopVideo(i);
+    }
 </script>

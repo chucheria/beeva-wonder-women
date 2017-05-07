@@ -1,42 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 body {
-  background: #929292;
-  font-family: "Helvetica Neue";
+  background: #E6E0CC;
+  font-family: 'Comfortaa', cursive;
   margin: auto;
   width: 1280px;
 }
 
-a {
-  color: #6baed6;
+section {
+  background: #E6E0CC;
+  color: #fff;
+  padding: 1.5em;
+  color: #BE785B;
+  font-size:1.2em;
 }
 
-a:not(:hover) {
+#follow {
+  background: none;
+}
+
+.title {
+    font-size:2em;
+    text-align:center;
+    padding-top:2em;
+    text-transform: uppercase;
+    color: #5E8681;
+}
+
+.subparagraph {
+  color: #A28F86;
+  font-size:0.6em;
+  padding-top: 2em;
+  float: right;
+}
+
+a:link,
+a:visited {
+  color: #964946;
   text-decoration: none;
 }
 
-.stack {
-  background: #222 url(cartographer.png);
-  color: #fff;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  display: none;
-  font-size: 48px;
-  height: 800px;
-  padding: 160px 80px;
-  width: 1280px;
-  -webkit-transform: translate3d(0,0,0);
+a:hover {
+  text-decoration: underline;
 }
 
-.active {
-  box-shadow: 0px 4px 8px rgba(0,0,0,.5);
+ul {
+    list-style-type: none;
+}
+
+
+ul li {
+    padding-bottom: 0.15em;
+}
+
+.slide-title {
+    float: right;
+    text-transform: uppercase;
+    color: #5E8681;
+    font-size: 0.9em;
+}
+
+.slide-body {
+    text-transform: lowercase;
+    text-align:center;
+    padding-top:3em;
+}
+
+video, img {
+  width: 100%;
+  margin: 0 auto;
   display: block;
-  position: fixed;
+  height: 100%;
 }
 
-.grey {
-  color: #969696;
+video+a, img+a{
+  font-size: 0.8em;
+}
+
+.super-important {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #964946;
 }
 
 @media

@@ -58,8 +58,8 @@ function stack() {
         .style("position", "absolute")
         .style("z-index", 10)
         .style("left", 0)
-        .style("width", "3px")
-        .style("background", "linear-gradient(to top,black,white)");
+        .style("width", "5px")
+        .style("background", "#5E8782");
 
     var sectionPrevious = d3.select(null),
         sectionCurrent = d3.select(section[0][0]),
